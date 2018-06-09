@@ -13,13 +13,4 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @RestController
-    @RequestMapping("/api")
-    public class ApiController{
-
-        @GetMapping("/greeting")
-        public String getGreeting(){
-            return "Hello world";
-        }
-    }
 }
