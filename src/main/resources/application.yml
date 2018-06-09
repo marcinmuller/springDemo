@@ -4,6 +4,20 @@ management:
       exposure:
         include: env, mappings, health
 ---
+#raczej nie używać razem z ssl
+#server:
+#  compression:
+#    enabled: true
+#    min-response-size: 1024
+#---
+#server:
+#  ssl:
+#    key-store: classpath:keystore.jks
+#    key-store-password: haslohaslo
+#    key-store-type: jks
+#    key-alias: nazwaaliasu
+#    key-password: haslohaslo
+#---
 spring:
   profiles: test
 server:

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>fruits</title>
+    <link th:href="@{/css/site.css}" rel="stylesheet"/>
+</head>
+<body>
+<table>
+    <tr>
+        <th>color</th>
+        <th>shape</th>
+        <th>name</th>
+    </tr>
+    <tr th:each="fruit:${fruits}">
+        <td th:text="${fruit.color}"></td>
+        <td th:text="${fruit.shape}"></td>
+        <td th:text="${fruit.name}"></td>
+    </tr>
+</table>
+</body>
+</html>
