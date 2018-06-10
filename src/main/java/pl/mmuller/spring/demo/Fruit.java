@@ -1,8 +1,16 @@
 package pl.mmuller.spring.demo;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="fruits")
 public class Fruit {
+    @Column(name = "color")
     private String color;
+    @Column(name = "shape")
     private String shape;
+    @Id
+    @Column(name = "name")
     private String name;
 
     public Fruit() {

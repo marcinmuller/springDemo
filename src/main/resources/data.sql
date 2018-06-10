@@ -1,0 +1,1 @@
+insert into fruits (color, shape, name) values ('orange', 'spherical', 'mandarine')
